@@ -94,7 +94,7 @@ public class ECommerceCheckoutClass
             Console.WriteLine("Invalid promo code.");
         }
         double discountAmount = subTotal * discountRate;
-        double finalTotal = (subTotal - discountRate) + shippingFee;
+        double finalTotal = (subTotal - discountAmount) + shippingFee;
         Console.WriteLine("=== Order Summary ===");
         Console.WriteLine($"Original Subtotal: {subTotal}");
         Console.WriteLine($"Discounted Subtotal: {discountAmount}");
